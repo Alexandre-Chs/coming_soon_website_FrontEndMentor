@@ -189,6 +189,10 @@ body {
         position: absolute;
         bottom: -5%;
     }
+
+    .button__email {
+        width: 90%;
+    }
 }
 
 
