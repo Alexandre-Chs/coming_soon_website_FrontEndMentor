@@ -1,0 +1,266 @@
+*, ::after, ::before {
+    padding: 0;
+    margin: 0; 
+    box-sizing: border-box;
+}
+
+/* DESKTOP DESIGN */
+
+
+body {
+    font-size: 16px; 
+    font-family: "Josefin Sans", sans-serif;
+    background: linear-gradient(135deg,#ffffff, #fff5f5);
+    height: 100vh;
+
+}
+
+.wrapper {
+    display: flex; 
+    height: 100%;
+}
+
+.container {
+    padding: 3rem 0 0 10rem;
+    width: 100%;
+    background-image: url("images/bg-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #fff5f5;
+}
+
+.logo {
+    padding-bottom: 9rem;
+}
+
+.content .one_text {
+    color: hsl(0, 36%, 70%);
+    font-weight: 300;
+    letter-spacing: 25px;   
+}
+
+.letter {
+    font-size: 5em;
+    letter-spacing: 20px;
+    line-height: 75px;
+    font-weight: 600;
+    color: hsl(0, 6%, 24%); 
+}
+
+.content p {
+    padding-top: 2rem;
+    width: 70%;
+    line-height: 25px;
+    color: hsl(0, 36%, 70%);
+    padding-bottom: 2rem;
+}
+
+.image__profile img{ 
+    width: auto;
+    height: 100vh; 
+}
+
+.button__email {
+    position: relative;
+    display: flex; 
+    align-items: center;
+    width: 70%;
+}
+
+#email {
+    width: 100%;
+    height: 3.5rem;
+    border-radius: 30px;
+    border: none;
+    border: 1px solid hsl(0, 36%, 70%); 
+    padding-left: 2rem;
+}
+
+#email::placeholder {
+    color: hsl(0, 36%, 70%);
+}
+
+
+#img__arrow {
+    background: linear-gradient(135deg,#f8bfbf, #ee8c8c);;
+    padding: 20px 3rem 20px 3rem;
+    border-radius: 50px;
+    position: absolute;
+    right: -3px;
+    top: -2px;
+}
+
+#img__arrow:hover {
+    padding: 22px 3.1rem 22px 3.1rem;
+    box-shadow: 1px 8px 21px 0px rgba(0,0,0,0.35);
+    top: -4px;
+}
+
+.button__email img {
+    position: absolute;
+    right: 120px; 
+}
+
+.text__error {
+    position:absolute;
+    top: 90%;
+    padding: 1rem 0 0 2rem;
+    color: hsl(0, 93%, 68%);
+}
+
+.invalid {
+    display: none; 
+}
+
+
+/* INTERMEDIATE DESIGN */
+
+@media(max-width: 1310px) {
+
+    .wrapper {
+        height: 100%;
+        background-color: #fff5f5;
+
+    }
+    .container {
+        padding: 0;
+    }
+
+    .content p {
+        width: 90%;
+    }
+    
+
+    .image__profile img{
+        display: none; 
+    }
+
+    .img__mobile {
+        margin: 0 auto; 
+        width: 80%;
+        height: 25rem;
+        margin-bottom: 6rem; 
+        background-image: url("images/hero-mobile.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .logo img {
+        position: absolute;
+        top: 4%;
+        left: 10%;
+    }
+
+    .logo {
+        padding-bottom: 8rem;
+    }
+
+    .content {
+        text-align: center;
+    }
+
+    .content p {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .letter {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .button__email {
+        margin: 0 auto; 
+        padding-bottom: 6rem;
+    }
+
+    .text__error {
+        position: absolute;
+        top: 30%;
+    }
+}
+
+@media(max-width: 768px) {
+
+    .wrapper {
+        height: 110%;
+    }
+    .text__error {
+        position: absolute;
+        bottom: -5%;
+    }
+}
+
+
+/* MOBILE DESIGN */
+
+@media(max-width: 550px) {
+
+    .wrapper {
+        position: relative; 
+        display: flex; 
+        flex-direction: column;
+    }
+
+    .container {
+        padding: 0;
+    }
+
+    .wrapper :nth-child(1) { order: 1}
+    .wrapper :nth-child(2) { order: 3}
+    .wrapper :nth-child(3) { order: 2}
+    
+    .image__profile img {
+        display: none; 
+    }
+
+    .img__mobile {
+        width: 100%;
+        height: 18rem;
+        margin-bottom: 3rem; 
+        background-image: url("images/hero-mobile.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .content p {
+        width: 90%;
+    }
+
+    .logo img {
+        position: absolute;
+        top: 4%;
+        left: 8%;
+        width: 30%;
+        height: auto;
+    }
+
+    .logo {
+        padding-bottom: 5rem;
+    }
+
+    .letter {
+        font-size: 3em;
+        line-height: 50px;
+        letter-spacing: 10px;
+    }
+
+    .text__error {
+        position: absolute;
+        bottom: 30%;
+    }
+}
+
+@media(max-width: 375px) {
+    .button__email {
+        width: 95%;
+    }
+
+    .text__error {
+        position: absolute;
+        bottom: 9%;
+        left: 2%;
+    }
+
+}
+
